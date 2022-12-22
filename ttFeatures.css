@@ -1,0 +1,67 @@
+#splide01 {
+    padding: 0;
+}
+
+#slider1 .splide__pagination {
+    top: 250px;
+    display: none !important;
+}
+
+#slider1 .fa-solid,
+#slider1 .fa-brands {
+    font-size: 43px;
+    padding: 10px 0 0;
+    opacity: .4;
+}
+
+#slider1 .splide__slide {
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+#slider1 .splide__slide i {
+    color: inherit;
+}
+
+#slider1 .splide__slide h3 {
+    margin: 10px 0 0;
+}
+
+#slider1 .splide__slide p {
+
+    font-size: 14px;
+    margin-top: 6px;
+    opacity: .7;
+    margin-bottom: 20px;
+}
+
+#slider1 .my-carousel-progress {
+    background: #ccc;
+}
+
+#slider1 .my-carousel-progress-bar {
+    background: #77dbde;
+    height: 3px;
+    transition: width 400ms ease;
+    width: 0;
+    z-index: 9999;
+    position: relative;
+}
+
+@media(min-width: 768px) {
+    #slider1:after {
+        background: linear-gradient(90deg, rgba(21, 23, 24, 1) 0%, rgba(9, 9, 121, 0) 20%, rgba(9, 9, 117, 0) 50%, rgba(10, 10, 112, 0) 90%, rgba(21, 23, 24, 1) 100%);
+        display: block;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    #slider1:hover:after {
+        display: none;
+    }
+}
